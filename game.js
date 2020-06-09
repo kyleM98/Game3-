@@ -199,9 +199,9 @@ if (cursors.up.isDown && (player.body.touching.down || canDoubleJump ) )
      player.setVelocityY(-430);
 }
 }
-gamescene.end = function() {
+scene.end = function() {
 
-    if(score == 130) {
+    if(score === 130) {
 		alert('Level Complete');
 	} else {
 		this.create();
